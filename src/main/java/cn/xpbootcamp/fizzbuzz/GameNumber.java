@@ -9,10 +9,17 @@ public class GameNumber {
 
     @Override
     public String toString() {
+        StringBuilder result = new StringBuilder();
         if (num % 3 == 0) {
-            return "Fizz";
+            result.append("Fizz");
         }
-        return String.valueOf(num);
+        if (num % 5 == 0) {
+            result.append("Buzz") ;
+        }
+        if (num % 7 == 0) {
+            result.append("Whizz");
+        }
+        return result.length() == 0 ? String.valueOf(num) : result.toString();
     }
 
 }

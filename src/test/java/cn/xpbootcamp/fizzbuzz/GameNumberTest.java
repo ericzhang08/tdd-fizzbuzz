@@ -16,6 +16,26 @@ public class GameNumberTest {
         checkOutput("Fizz", 3);
     }
 
+    @Test
+    public void should_return_Buzz_when_number_is_divisible_by_5() {
+        checkOutput("Buzz", 5);
+    }
+
+
+    @Test
+    public void should_return_Whizz_when_number_is_divisible_by_7() {
+        checkOutput("Whizz", 7);
+    }
+
+    @Test
+    public void should_return_FizzBuzz_when_number_is_divisible_by_3_and_5() {
+        checkOutput("FizzBuzz", 15);
+    }
+
+
+
+
+
     private void checkOutput(String fizz, int i) {
         assertEquals(fizz, new GameNumber(i).toString());
     }
