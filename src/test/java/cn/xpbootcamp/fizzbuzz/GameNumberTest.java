@@ -32,7 +32,22 @@ public class GameNumberTest {
         checkOutput("FizzBuzz", 15);
     }
 
+    @Test
+    public void should_return_FizzWhizz_when_number_is_divisible_by_3_and_7() {
+        checkOutput("FizzWhizz", 21);
+    }
 
+
+    @Test
+    public void should_return_BuzzWhizz_when_number_is_divisible_by_5_and_7() {
+        checkOutput("BuzzWhizz", 35);
+    }
+
+
+    @Test
+    public void should_return_FizzBuzzWhizz_when_number_is_divisible_by_3_and_5_and_7() {
+        checkOutput("FizzBuzzWhizz", 105);
+    }
 
 
 
