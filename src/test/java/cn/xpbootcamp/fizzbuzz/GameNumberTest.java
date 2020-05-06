@@ -8,7 +8,6 @@ public class GameNumberTest {
 
     @Test
     public void should_return_raw_number_given_normal_number() {
-        GameNumber gameNumber = new GameNumber(1);
-        assertEquals("1", gameNumber.toString());
+        assertEquals("1", new GameNumber(1).toString());
     }
 }

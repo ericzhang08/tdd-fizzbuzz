@@ -11,4 +11,5 @@ public class GameNumber {
     public String toString() {
         return String.valueOf(num);
     }
+
 }
