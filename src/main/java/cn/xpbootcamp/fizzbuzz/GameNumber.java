@@ -10,19 +10,19 @@ public class GameNumber {
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
-        if (isDivisibleBy(3)) {
+        if (isDividedBy(3)) {
             result.append("Fizz");
         }
-        if (isDivisibleBy(5)) {
+        if (isDividedBy(5)) {
             result.append("Buzz") ;
         }
-        if (isDivisibleBy(7)) {
+        if (isDividedBy(7)) {
             result.append("Whizz");
         }
         return result.length() == 0 ? String.valueOf(num) : result.toString();
     }
 
-    private boolean isDivisibleBy(int i) {
+    private boolean isDividedBy(int i) {
         return num % i == 0;
     }
 }
