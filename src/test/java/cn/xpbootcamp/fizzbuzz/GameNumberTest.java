@@ -2,6 +2,8 @@ package cn.xpbootcamp.fizzbuzz;
 
 import org.junit.Test;
 
+import java.util.stream.Stream;
+
 import static org.junit.Assert.assertEquals;
 
 public class GameNumberTest {
@@ -40,7 +42,7 @@ public class GameNumberTest {
 
     @Test
     public void should_return_BuzzWhizz_when_say_given_number_is_divisible_by_5_and_7() {
-        checkOutput("BuzzWhizz", 35);
+        checkOutput("BuzzWhizz", 70);
     }
 
 
@@ -48,6 +50,17 @@ public class GameNumberTest {
     public void should_return_FizzBuzzWhizz_when_say_given_number_is_divisible_by_3_and_5_and_7() {
         checkOutput("FizzBuzzWhizz", 105);
     }
+
+    @Test
+    public void should_return_Fizz_when_say_given_number_contains_3() {
+        checkOutput("Fizz", 13);
+    }
+
+    @Test
+    public void should_return_fizz_when_say_given_number_contains_3_and_is_dividable_by_all_numbers() {
+        checkOutput("Fizz", 2310);
+    }
+
 
     private void checkOutput(String fizz, int number) {
         assertEquals(fizz, new GameNumber(number).say());

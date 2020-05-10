@@ -9,8 +9,11 @@ public class GameNumber {
 
     public String say() {
         StringBuilder result = new StringBuilder();
-        if (isDividedBy(3)) {
+        if (isDividedBy(3) || String.valueOf(num).contains("3")) {
             result.append("Fizz");
+        }
+        if (String.valueOf(num).contains("3")) {
+            return result.toString();
         }
         if (isDividedBy(5)) {
             result.append("Buzz") ;
