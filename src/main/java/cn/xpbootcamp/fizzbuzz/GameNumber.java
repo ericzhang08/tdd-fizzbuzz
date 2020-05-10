@@ -9,10 +9,10 @@ public class GameNumber {
 
     public String say() {
         StringBuilder result = new StringBuilder();
-        if (isDividedBy(3) || String.valueOf(num).contains("3")) {
+        if (isDividedBy(3) || Contains(3)) {
             result.append("Fizz");
         }
-        if (String.valueOf(num).contains("3")) {
+        if (Contains(3)) {
             return result.toString();
         }
         if (isDividedBy(5)) {
@@ -22,6 +22,10 @@ public class GameNumber {
             result.append("Whizz");
         }
         return result.length() == 0 ? String.valueOf(num) : result.toString();
+    }
+
+    private  boolean Contains(int n) {
+        return String.valueOf(this.num).contains(String.valueOf(n));
     }
 
     private boolean isDividedBy(int i) {
