@@ -10,25 +10,25 @@ public class GameNumber {
     public String say() {
         StringBuilder result = new StringBuilder();
         if(Contains(5)){
-            if (isDividedBy(5)) {
+            if (isDividableBy(5)) {
                 result.append("Buzz") ;
             }
-            if (isDividedBy(7)) {
+            if (isDividableBy(7)) {
                 result.append("Whizz");
             }
             return result.toString();
 
         }
-        if (isDividedBy(3) || Contains(3)) {
+        if (isDividableBy(3) || Contains(3)) {
             result.append("Fizz");
         }
         if (Contains(3)) {
             return result.toString();
         }
-        if (isDividedBy(5)) {
+        if (isDividableBy(5)) {
             result.append("Buzz") ;
         }
-        if (isDividedBy(7)) {
+        if (isDividableBy(7)) {
             result.append("Whizz");
         }
 
@@ -39,7 +39,7 @@ public class GameNumber {
         return String.valueOf(this.num).contains(String.valueOf(n));
     }
 
-    private boolean isDividedBy(int i) {
+    private boolean isDividableBy(int i) {
         return num % i == 0;
     }
 }
