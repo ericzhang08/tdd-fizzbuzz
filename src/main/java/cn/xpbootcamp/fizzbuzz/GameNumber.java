@@ -9,6 +9,16 @@ public class GameNumber {
 
     public String say() {
         StringBuilder result = new StringBuilder();
+        if(Contains(5)){
+            if (isDividedBy(5)) {
+                result.append("Buzz") ;
+            }
+            if (isDividedBy(7)) {
+                result.append("Whizz");
+            }
+            return result.toString();
+
+        }
         if (isDividedBy(3) || Contains(3)) {
             result.append("Fizz");
         }
@@ -21,6 +31,7 @@ public class GameNumber {
         if (isDividedBy(7)) {
             result.append("Whizz");
         }
+
         return result.length() == 0 ? String.valueOf(num) : result.toString();
     }
 
