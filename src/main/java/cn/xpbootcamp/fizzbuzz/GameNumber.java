@@ -12,7 +12,6 @@ public class GameNumber {
         if (Contains(7)) {
             if (Contains(3) && !Contains(5)) {
                 result.append("Fizz");
-
             } else  {
                 if (isDividableBy(3)) {
                     result.append("Fizz");
@@ -34,11 +33,11 @@ public class GameNumber {
             return result.toString();
 
         }
-        if (isDividableBy(3) || Contains(3)) {
-            result.append("Fizz");
-        }
         if (Contains(3)) {
-            return result.toString();
+            return "Fizz";
+        }
+        if (isDividableBy(3) ) {
+            result.append("Fizz");
         }
         if (isDividableBy(5)) {
             result.append("Buzz");

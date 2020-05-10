@@ -90,6 +90,15 @@ public class GameNumberTest {
         checkOutput("FizzWhizz", 735);
     }
 
+    @Test
+    public void checkAllCase() {
+        checkOutput("Fizz", 13);
+        checkOutput("Fizz", 30);
+        checkOutput("BuzzWhizz", 35);
+        checkOutput("Fizz", 75);
+    }
+
+
 
     private void checkOutput(String fizz, int number) {
         assertEquals(fizz, new GameNumber(number).say());
