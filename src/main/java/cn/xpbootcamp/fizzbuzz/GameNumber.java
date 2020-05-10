@@ -7,8 +7,7 @@ public class GameNumber {
         this.num = num;
     }
 
-    @Override
-    public String toString() {
+    public String say() {
         StringBuilder result = new StringBuilder();
         if (isDividedBy(3)) {
             result.append("Fizz");

@@ -25,15 +25,31 @@ given number is dividable by 3 and 7 when say then return fizzWhizz
 given number is dividable by 5 and 7 when say  then return buzzWhizz
 given number is dividable by 3 and 5 and 7 when say then return fizzbuzzWhizz
 given number contains 3 when say then return fizz   13 30 
-//given number contains 3 and is dividable by all number when say then return fizz 30
-given number contains 5  and is dividable by 3 when say then return BuzzWhizz 35
-given number contains 7 and 5 and 3 is dividable by 3 and 5 when say return fizz 75 375
-given number contains 3 and 5 
-given number contains 3 and 7 
-given number contains 5 and 7 
-given number contains 3 and 5 and 7 
+//given number contains 3 and is dividable by all number when say then return fizz 
+given number contains 5 and is dividable by 3 when say then return BuzzWhizz 15
+given number contains 7 and  is  deivdable  5 when say return fizz 75 
+given number contains 3 and 5 and is dividable by 3 and 5 and 7 should return  buzzWhizz  315
+given number contains 3 and 7  //the same as before
+given number contains 5 and 7 and is dividable by 3 and 5 and 7 shoud return FizzWhizz 1785
+given number contains 3 and 5 and 7 and is dividable by 3 and 5 and 7 should return  FizzWhizz   735
 ```
+contains 3 should return fizz;
+
+given number contains 5 should ignore divided by 3
+
+given number contains 7 should 
+    contains 3 --> return fizz
+    !contains 3 --> return 
+        ignore divided by 5 && contains 3 return fizz
+        
+
+
+given bumber
 75 : fizzbuzz --> buzz --> fizzbuzz
 375: fizzbuzzwhizz(1,2,3) --> (4,5) --> BuzzWhizz(6) -->(7) FizzWhizz
+
+315: fizzbuzzwhizz(1,2,3) --> fizz(4,5 ) --> buzzWhizz
+
+735：fizzbuzzwhizz(1,2,3) -->fizz(4,5)--> buzzwhizz( 6) -->fizzwhizz
 
 
