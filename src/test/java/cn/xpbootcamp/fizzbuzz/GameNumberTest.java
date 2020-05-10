@@ -71,6 +71,11 @@ public class GameNumberTest {
         checkOutput("BuzzWhizz", 1365);
     }
 
+    @Test
+    public void should_return_FizzWhizz_when_say_given_number_contains_7_and_is_dividable_by_all_numbers() {
+        checkOutput("FizzWhizz", 1470);
+    }
+
 
 
 
