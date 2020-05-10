@@ -85,6 +85,11 @@ public class GameNumberTest {
         checkOutput("FizzWhizz", 1785);
     }
 
+    @Test
+    public void should_return_FizzWhizz_when_say_given_number_contains_7_and_5_and_3_is_dividable_by_all_numbers() {
+        checkOutput("FizzWhizz", 735);
+    }
+
 
     private void checkOutput(String fizz, int number) {
         assertEquals(fizz, new GameNumber(number).say());
