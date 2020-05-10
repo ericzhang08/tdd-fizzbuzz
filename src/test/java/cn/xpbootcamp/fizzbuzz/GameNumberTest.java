@@ -42,9 +42,8 @@ public class GameNumberTest {
 
     @Test
     public void should_return_BuzzWhizz_when_say_given_number_is_divisible_by_5_and_7() {
-        checkOutput("BuzzWhizz", 70);
+        checkOutput("BuzzWhizz", 140);
     }
-
 
     @Test
     public void should_return_FizzBuzzWhizz_when_say_given_number_is_divisible_by_3_and_5_and_7() {
@@ -76,7 +75,15 @@ public class GameNumberTest {
         checkOutput("FizzWhizz", 1470);
     }
 
+    @Test
+    public void should_return_Fizz_when_say_given_number_contains_7_and_3_is_dividable_by_all_numbers() {
+        checkOutput("Fizz", 2730);
+    }
 
+    @Test
+    public void should_return_FizzWhizz_when_say_given_number_contains_7_and_5_is_dividable_by_all_numbers() {
+        checkOutput("FizzWhizz", 1785);
+    }
 
 
     private void checkOutput(String fizz, int number) {

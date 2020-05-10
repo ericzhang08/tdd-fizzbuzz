@@ -10,12 +10,17 @@ public class GameNumber {
     public String say() {
         StringBuilder result = new StringBuilder();
         if (Contains(7)) {
-            if (isDividableBy(3)) {
-                result.append("Fizz") ;
+            if(Contains(3)){
+                 result.append("Fizz");
+            }else {
+                if (isDividableBy(3)) {
+                    result.append("Fizz") ;
+                }
+                if (isDividableBy(7)) {
+                    result.append("Whizz");
+                }
             }
-            if (isDividableBy(7)) {
-                result.append("Whizz");
-            }
+
             return result.toString();
         }
         if(Contains(5)){
