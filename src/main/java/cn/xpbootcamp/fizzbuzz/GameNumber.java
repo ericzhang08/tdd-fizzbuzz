@@ -21,7 +21,7 @@ public class GameNumber {
                 }
             }
 
-            return result.toString();
+            return result.length() == 0 ? String.valueOf(num) : result.toString();
         }
         if (Contains(5)) {
             if (isDividableBy(5)) {
@@ -30,7 +30,7 @@ public class GameNumber {
             if (isDividableBy(7)) {
                 result.append("Whizz");
             }
-            return result.toString();
+            return result.length() == 0 ? String.valueOf(num) : result.toString();
 
         }
         if (Contains(3)) {
